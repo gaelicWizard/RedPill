@@ -20,13 +20,17 @@ Open the Security & Privacy panel in System Preferences
 
 ![Image of alert](/docs_images/redpill_install2.png)
 
-In the bottom panel in the pane click "Open Anyway" to allow the screensaver to Open
+In the bottom panel in the pane click "Open Anyway" to allow the screensaver to open
 
-The system will alert you that the screensaveris about to be opened
+The system will alert you that the screensaver is about to be opened
 
 ![Image of alert](/docs_images/redpill_install3.png)
 
 Click "Open" to accept
+
+The system will prompt you to install the screensaver for all users or only the current users
+The system will then require you to enter your administrator (root) password
+After install the screensaver will be available to use in the Desktop & Screensaver pane in System Preferences
 
 Click yes and the screensaver will be added to System Preferences
 

@@ -5,11 +5,12 @@ Forked from https://github.com/lpar/RedPill
 
 To install: 
 
-[Download the latest release](https://github.com/RoaddogLabs/RedPill/releases/download/v1.0/RedPill.saver.zip)
+[Download the latest release](https://github.com/RoaddogLabs/RedPill/releases/download/v1.0/RedPill.saver.zip) adn upack the .zip file.
 
-Unpack the .zip file
 
-Double click RedPill.saver and the system will ask if you want to use the screensaver
+Double click RedPill.saver and the system will alert you that the screensaver is not signed. (I don't have a current MasOS signing)
+
+![Image of alert](/docs_images/redpill_install1.png)
 
 Click yes and the screensaver will be added to System Preferences
 

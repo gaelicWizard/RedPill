@@ -120,7 +120,15 @@ NSOpenGLPixelFormat *pixformat;
    // Initialize the parameters which aren't editable in the dialog box.
    // The idea is to parameterize everything in advance, so that you can
    // change what's editable in the dialog without too much pain.
-   saverParams.cellSize = 2.0;
+
+   CGFloat screenRatio = frame.size.width / frame.size.height;
+   CGFloat screenRatioSqrt = sqrt(screenRatio);
+
+   // Normalize parameters using screen ratio
+   saverParams.maxStrips *= (screenRatio + screenRatioSqrt) / 2;
+   saverParams.cursorSpeed /= screenRatioSqrt;
+
+   saverParams.cellSize = 2.0 * sqrt(screenRatioSqrt);
    saverParams.maxCellLife = 120;
    saverParams.numGlyphs = NUM_GLYPHS;
    saverParams.cursorChangeProbability = 20;

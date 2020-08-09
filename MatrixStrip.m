@@ -120,24 +120,60 @@ int c;
    if (current == 0) {
       // Cursor is drawing empty space
       // Next state is either draw-live or draw-static
-      cursorState = (random() % (stripParams.cursorLiveProbability + 
-         stripParams.cursorStaticProbability)) < stripParams.cursorLiveProbability ? 
+     
+      /*
+       
+      original:
+     
+      cursorState = (random() % (stripParams.cursorLiveProbability +
+         stripParams.cursorStaticProbability)) < stripParams.cursorLiveProbability ?
          (random() % stripParams.maxCellLife) : 1;
+      
+      */
+      cursorState =
+         ((random() % (stripParams.cursorLiveProbability + stripParams.cursorStaticProbability))
+            < stripParams.cursorLiveProbability)
+         ? (random() % stripParams.maxCellLife + 1)
+         : 1;
    } else if (current == 1) {
       // Cursor is drawing static cells
+     
+      /*
+     
+      original:
+       
       // Next state is either draw-live or draw-empty-space
-      cursorState = (random() % (stripParams.cursorLiveProbability + 
-         stripParams.cursorEmptyProbability)) < stripParams.cursorLiveProbability ? 
+      cursorState = (random() % (stripParams.cursorLiveProbability +
+         stripParams.cursorEmptyProbability)) < stripParams.cursorLiveProbability ?
          (random() % stripParams.maxCellLife) : 0;
+       
+      */
+      
+      // Next state is draw-live
+      cursorState = random() % stripParams.maxCellLife + 1;
    } else if (current > 1) {
       // Cursor is drawing live cells
+      
+      /*
+       
+      original:
+      
       // Next state is either draw-static or draw-empty-space
-      cursorState = (random() % (stripParams.cursorStaticProbability + 
-         stripParams.cursorEmptyProbability)) < stripParams.cursorStaticProbability ? 
+      cursorState = (random() % (stripParams.cursorStaticProbability +
+         stripParams.cursorEmptyProbability)) < stripParams.cursorStaticProbability ?
          1 : 0;
+      */
+      
+      // Next state is draw-static
+      cursorState = 1;
    } else {
       // None of the above
       // Pick a state completely at random
+      
+      /*
+       
+      original:
+       
       int x = (random() % (stripParams.cursorStaticProbability +
          stripParams.cursorEmptyProbability + stripParams.cursorLiveProbability));
       if (x < stripParams.cursorEmptyProbability) {
@@ -146,6 +182,13 @@ int c;
          cursorState = 1;
       } else {
          cursorState = (random() % stripParams.maxCellLife);
+      }
+      */
+      
+      cursorState = 1;
+      int x = (random() % (stripParams.cursorStaticProbability + stripParams.cursorLiveProbability));
+      if (x > stripParams.cursorStaticProbability) {
+         cursorState += random() % stripParams.maxCellLife;
       }
    }
 }

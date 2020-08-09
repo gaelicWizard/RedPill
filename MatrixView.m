@@ -126,7 +126,7 @@ NSOpenGLPixelFormat *pixformat;
    saverParams.cursorChangeProbability = 20;
    saverParams.cursorLiveProbability = 30;
    saverParams.cursorStaticProbability = 30;
-   saverParams.cursorEmptyProbability = 10;
+//   saverParams.cursorEmptyProbability = 0;
    saverParams.framesPerLivingCellChange = 3;
    saverParams.minDepth = CLIP_NEAR;
    saverParams.spawnChance = 0.2;

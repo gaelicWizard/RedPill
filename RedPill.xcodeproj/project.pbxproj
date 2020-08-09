@@ -49,7 +49,7 @@
 		C0F75DEF14649DBA00BC0085 /* MatrixPrefsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixPrefsWindow.h; sourceTree = "<group>"; };
 		C0F75DF014649DBA00BC0085 /* MatrixPrefsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixPrefsWindow.m; sourceTree = "<group>"; };
 		C0F75DF114649DBA00BC0085 /* MatrixStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixStrip.h; sourceTree = "<group>"; };
-		C0F75DF214649DBA00BC0085 /* MatrixStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixStrip.m; sourceTree = "<group>"; };
+		C0F75DF214649DBA00BC0085 /* MatrixStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = MatrixStrip.m; sourceTree = "<group>"; tabWidth = 3; wrapsLines = 0; };
 		C0F75DF314649DBA00BC0085 /* MatrixStripParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixStripParams.h; sourceTree = "<group>"; };
 		C0F75DF414649DBA00BC0085 /* MatrixTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTexture.h; sourceTree = "<group>"; };
 		C0F75DF514649DBA00BC0085 /* MatrixTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTexture.m; sourceTree = "<group>"; };

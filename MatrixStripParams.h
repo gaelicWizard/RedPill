@@ -25,7 +25,7 @@ struct MatrixStripParams {
    int cursorChangeProbability; // percentage chance of cursor state change during drawing phase
    int cursorLiveProbability; // relative amounts of time the cursor spends drawing live cells,
    int cursorStaticProbability; // static cells,
-   int cursorEmptyProbability; // or empty space
+//   int cursorEmptyProbability; // or empty space
    int framesPerLivingCellChange; // how many 1/30ths of a second for each living cell to change glyph
    GLfloat cursorSpeed; // speed of cursor fall
    GLfloat maxDepth; // depth strips start at
